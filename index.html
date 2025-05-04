@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=1920 height=1080 tabindex="-1"></canvas>
+      <canvas id="unity-canvas" width=960 height=540 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -52,12 +52,12 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/ff_build.loader.js";
+      var loaderUrl = buildUrl + "/ff_build2.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/ff_build.data.unityweb",
-        frameworkUrl: buildUrl + "/ff_build.framework.js.unityweb",
-        codeUrl: buildUrl + "/ff_build.wasm.unityweb",
+        dataUrl: buildUrl + "/ff_build2.data.unityweb",
+        frameworkUrl: buildUrl + "/ff_build2.framework.js.unityweb",
+        codeUrl: buildUrl + "/ff_build2.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "FishingFrenzy",
@@ -98,8 +98,8 @@
 
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
-        canvas.style.width = "1920px";
-        canvas.style.height = "1080px";
+        canvas.style.width = "960px";
+        canvas.style.height = "540px";
       }
 
       document.querySelector("#unity-loading-bar").style.display = "block";
